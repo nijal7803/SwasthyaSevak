@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import '../styles/login.css'
 import { Container, Row, Col, Form, FormGroup, Button } from 'reactstrap'
 import {Link} from 'react-router-dom'
-
+// import "../styles/login1.css"
 import loginImg from '../assets/login.png'
 import userIcon from '../assets/user.png'
 
@@ -29,14 +29,14 @@ const Login = () => {
                     <Col lg='8' className='m-auto'>
                         <div className="login__container d-flex justify-content-between">
                             <div className="login__img">
-                                <img src={loginImg} alt="" />
+                                <img  src={loginImg} alt="" />
                             </div>
 
                             <div className="login__form">
                                 <div className="user">
                                     <img src={userIcon} alt="" />
                                 </div>
-                                <h2 className='text-black'>Login</h2>
+                                <h2>Login</h2>
                             
 
                             <Form onSubmit={handleClick}>
@@ -52,7 +52,7 @@ const Login = () => {
 
                             </Form>
 
-                            <p>Don't have an account? <Link to="/register">Create</Link></p>
+                            <p className='para1'>Don't have an account? <Link to="/register">Create</Link></p>
                             </div>
                         </div>
                     </Col>

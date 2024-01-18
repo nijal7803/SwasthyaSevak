@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import images from "../imageImports"
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import StripePayment from '../StripePayment';
+import "../App.css"
 
 const Home = () => {
   const [formValid, setFormValid] = useState(false);
@@ -44,7 +45,7 @@ const Home = () => {
                 <a href="#price">Pricing</a>
               </li>
               <li className="link">
-                <button className="btn" onClick={handleLogin}> Login </button>
+                <button className="btn" onClick={handleLogin}>Login  </button>
               </li>
             </ul>
           </nav>
@@ -195,7 +196,7 @@ const Home = () => {
           </div>
         </div>
         <div className="trainer__card">
-          <img src={images.trainer2} alt="trainer" />
+          <img src={images.class4} alt="trainer" />
         </div>
         <div className="trainer__card">
           <div className="trainer__content">
@@ -215,7 +216,7 @@ const Home = () => {
           </div>
         </div>
         <div className="trainer__card">
-          <img src={images.trainer3} alt="trainer" />
+          <img src={images.class2} alt="trainer" />
         </div>
         <div className="trainer__card">
           <div className="trainer__content">

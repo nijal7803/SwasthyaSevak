@@ -33,7 +33,7 @@
 }
 
 .login__form h2 {
-    color: #fff;
+    color: black;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -56,21 +56,23 @@
 }
 
 .auth__btn {
-    background: var(--heading-color) !important;
+    background: black !important;
     width: 100%;
     color: #fff !important;
+    
 }
 
 .login__form p {
     font-size: .9rem;
-    color: #fff;
+color: orange;
     margin-top: 1.5rem;
     text-align: center;
 }
 
 .login__form p a {
-    color: var(--heading-color);
+    color: black;
     text-decoration: none;
     margin-left: 5px;
     font-weight: 500;
 }
+
